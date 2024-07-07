@@ -1,3 +1,5 @@
+Português | [English](https://github.com/Jonthmiranda/Automazap/blob/main/Automazap%20en.py)
+
 # Automazap
 
 ## Descrição
