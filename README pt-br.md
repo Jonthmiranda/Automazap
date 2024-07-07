@@ -23,4 +23,4 @@ Inicie o código usando uma IDE Python;
 
 Quando você iniciar não precisa mexer no computador, lembre-se, linha 21 e 22, precisa estar habilitado para rodar corretamente em uma IDE, ao criar .exe essas linhas precisam estar desativadas e não deverá ter nada aberto além da IDE;
 
-[Código comentado e explicado, fácil entendimento](https://github.com/Jonthmiranda/Automazap/blob/main/Automazap%20pt-br.py)
+[Código comentado e explicado](https://github.com/Jonthmiranda/Automazap/blob/main/Automazap%20pt-br.py)
