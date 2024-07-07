@@ -2,7 +2,9 @@
 
 ## Descrição
 
-Sistema de automação em Python para envio de cardápios e descrição para contatos no Whatsapp usando Selenium, Pyautogui, Pandas e urllib.
+Sistema de automação em Python para envio de cardápios e descrição para contatos no Whatsapp
+
+bibliotecas: Selenium, Pyautogui, Pandas e urllib.
 
 ## Instalação
 
