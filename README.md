@@ -1,4 +1,4 @@
-[Portugues](https://github.com/Jonthmiranda/Automazap/blob/main/README%20pt-br.md) | English
+[Português](https://github.com/Jonthmiranda/Automazap/blob/main/README%20pt-br.md) | English
 
 # Automazap
 
