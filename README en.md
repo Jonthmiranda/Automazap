@@ -2,7 +2,9 @@
 
 ## Description
 
-Automation system in Python for sending menus and descriptions to contacts on Whatsapp using Selenium, Pyautogui, Pandas and urllib.
+Automation system in Python for sending menus and descriptions to contacts on Whatsapp.
+
+libraries: Selenium, Pyautogui, Pandas and urllib.
 
 ## Installation
 
