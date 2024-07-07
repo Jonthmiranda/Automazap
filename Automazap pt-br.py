@@ -14,11 +14,11 @@ conferindo = input("\n\nEnquanto esse programa estiver rodando, não mexa no com
 msg_cliente = input("Digite a mensagem que o cliente irá receber: \n\n")
 
 #Abre o diretório que está os cardapios usando webbrowser, aguarda carregamento por 2 segundos, muda a tela para
-#o cardapio usando alt + tab (por isso da conferencia de estar tudo fechado), aguarda 1 segundo por garantica,
+#o cardapio usando alt + tab (por isso da conferencia de estar tudo fechado), aguarda 1 segundo por garantia,
 #seleciona tudo e copia usando PYAUTOGUI
 webbrowser.open(os.path.realpath(".\cardapio"))
 time.sleep(2)
-pyautogui.hotkey('alt', 'tab') #Se estiver rodando em IDE, não pelo .exe, é necessário habilidar a linha 21 e 22, se não buga
+pyautogui.hotkey('alt', 'tab') #Se estiver rodando em IDE, é necessário habilitar a linha 21 e 22, se não buga
 time.sleep(1)
 pyautogui.hotkey('ctrl', 'a')
 pyautogui.hotkey('ctrl', 'c')
