@@ -21,6 +21,6 @@ git clone https://github.com/Jonthmiranda/Automazap
 
 Start the Main.py using a Python IDE or the CMD;
 
-You can choose the language between PT-BR and English
+You can choose the language between Portuguese and English
 
 After you choose the language and write the message, you don't need to touch the computer, remember, line 21 and 22 of Automazap.py, it needs to be enabled to run correctly in an IDE or CMD, when creating .exe these lines need to be disabled and there shouldn't be anything open other than the IDE;
