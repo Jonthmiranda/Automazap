@@ -1,6 +1,6 @@
 Português | [English](https://github.com/Jonthmiranda/Automazap/blob/main/README.md)
 
-# Automazap
+# Automazap 1.1
 
 ## Descrição
 
@@ -19,8 +19,8 @@ git clone https://github.com/Jonthmiranda/Automazap
 
 2º Os contatos de para quem será enviado está no Contatos.xlsx
 
-Inicie o código usando uma IDE Python;
+Inicie Main.py usando uma IDE Python ou CMD;
 
-Quando você iniciar não precisa mexer no computador, lembre-se, linha 21 e 22, precisa estar habilitado para rodar corretamente em uma IDE, ao criar .exe essas linhas precisam estar desativadas e não deverá ter nada aberto além da IDE;
+Você pode escolher a linguagem entre Português e Inglês
 
-[Código comentado e explicado](https://github.com/Jonthmiranda/Automazap/blob/main/Automazap%20pt-br.py)
+Depois de você escolher a linguagem e escrever a mensagem, você não precisa mexer no computador, lembre-se, linha 21 e 22 do Automazappt-br.py, precisa estar habilitado para rodar corretamente em uma IDE ou CMD, ao criar .exe essas linhas precisam estar desativadas e não deverá ter nada aberto além da IDE
