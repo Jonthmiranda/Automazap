@@ -36,7 +36,7 @@ while len(browser.find_elements(By.ID, "side")) < 1:
 
 #Sending a message using the link, scrolls through the database, organizes the data to be able to use it in a link
 #open the link and follow
-for i, message in enumerate(contacts_df['Número']): número == number
+for i, message in enumerate(contacts_df['Número']): #número == number
     number = contacts_df.loc[i, "Número"]
     link = f"https://web.whatsapp.com/send?phone={number}&text={msg_client}"
     browser.get(link)
@@ -57,3 +57,6 @@ for i, message in enumerate(contacts_df['Número']): número == number
     #sending menus that are in the clipboard, waiting 10 seconds to load photos
     #press enter and wait 10 seconds until sending
     pyautogui.hotkey('ctrl', 'v')
+    time.sleep(10)
+    pyautogui.hotkey('enter')
+    time.sleep(10)
