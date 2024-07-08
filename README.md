@@ -1,6 +1,6 @@
 [Português](https://github.com/Jonthmiranda/Automazap/blob/main/README%20pt-br.md) | English
 
-# Automazap
+# Automazap 1.1
 
 ## Description
 
@@ -19,8 +19,8 @@ git clone https://github.com/Jonthmiranda/Automazap
 
 2º The contacts of those who will be sent are in Contatos.xlsx
 
-Start code using a Python IDE;
+Start the Main.py using a Python IDE or the CMD;
 
-When you start you don't need to touch the computer, remember, line 21 and 22, it needs to be enabled to run correctly in an IDE, when creating .exe these lines need to be disabled and there shouldn't be anything open other than the IDE;
+Now you can choose the language between PT-BR and English
 
-[Code commented and explained](https://github.com/Jonthmiranda/Automazap/blob/main/Automazap.py)
+After you choose the language and write the message, you don't need to touch the computer, remember, line 21 and 22 of Automazap.py, it needs to be enabled to run correctly in an IDE or CMD, when creating .exe these lines need to be disabled and there shouldn't be anything open other than the IDE;
