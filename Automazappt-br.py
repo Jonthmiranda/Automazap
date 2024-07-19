@@ -34,29 +34,36 @@ navegador.get("https://web.whatsapp.com/")
 while len(navegador.find_elements(By.ID, "side")) < 1:
     time.sleep(1)
 
-#Envio de mensagem usando o link, percorre o banco de dados, organiza os dados para poder usar em link
-#abre o link e segue
-for i, mensagem in enumerate(contatos_df['Número']):
-    numero = contatos_df.loc[i, "Número"]
-    link = f"https://web.whatsapp.com/send?phone={numero}&text={msg_cliente}"
-    navegador.get(link)
+try:
+    #Envio de mensagem usando o link, percorre o banco de dados, organiza os dados para poder usar em link
+    #abre o link e segue
+    for i, mensagem in enumerate(contatos_df['Número']):
+        numero = contatos_df.loc[i, "Número"]
+        link = f"https://web.whatsapp.com/send?phone={numero}&text={msg_cliente}"
+        navegador.get(link)
     
-    #Aguarda a pagina carregar, localizando o elemento "side" no HTML, após localizado aguarda
-    #o carregamento completo da pagino por 5 segundos
-    while len(navegador.find_elements(By.ID, "side")) < 1:
-        time.sleep(1) 
-    time.sleep(5)   
+        #Aguarda a pagina carregar, localizando o elemento "side" no HTML, após localizado aguarda
+        #o carregamento completo da pagino por 5 segundos
+        while len(navegador.find_elements(By.ID, "side")) < 1:
+            time.sleep(1) 
+        time.sleep(5)   
+    
+        #Variavel "elem_xpath" contem o XPATH do elemento que precisa ser localizado,
+        #localiza o elemento "caixa de texto" no HTML pelo XPATH, e aperta enter, aguarda 2 segundos
+        #para continuar
+        elem_xpath = '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div/p/span'
+        navegador.find_element(By.XPATH, f'{elem_xpath}').send_keys(Keys.ENTER)
+        time.sleep(2)
 
-    #Variavel "elem_xpath" contem o XPATH do elemento que precisa ser localizado,
-    #localiza o elemento "caixa de texto" no HTML pelo XPATH, e aperta enter, aguarda 2 segundos
-    #para continuar
-    elem_xpath = '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div/p/span'
-    navegador.find_element(By.XPATH, f'{elem_xpath}').send_keys(Keys.ENTER)
-    time.sleep(2)
+        #enviando cardápios que estão na area de tranferencia, aguardando 10 segundos para carregar fotos
+        #aperta enter e aguarda 10 segundos até enviar
+        pyautogui.hotkey('ctrl', 'v')
+        time.sleep(10)
+        pyautogui.hotkey('enter')
+        time.sleep(10)
 
-    #enviando cardápios que estão na area de tranferencia, aguardando 10 segundos para carregar fotos
-    #aperta enter e aguarda 10 segundos até enviar
-    pyautogui.hotkey('ctrl', 'v')
-    time.sleep(10)
-    pyautogui.hotkey('enter')
-    time.sleep(10)
+except NoSuchElementException:
+    print("O número ", Número, " não funcionou")
+
+#nw_xpath = '//*[@id="app"]/div/span[2]/div/span/div/div/div/div/div/div[2]'
+ #   while len(navegador.find_element(By.XPATH, f'{nw_xpath}')
