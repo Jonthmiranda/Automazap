@@ -14,7 +14,7 @@ import pyautogui
 conferindo = input("\n\nEnquanto esse programa estiver rodando, não mexa no computador!!\nAperte enter para continuar!\n\n")
 msg_cliente = input("Digite a mensagem que o cliente irá receber: \n\n")
 
-#Abre o diretório que está os cardapios usando webbrowser, aguarda carregamento por 2 segundos, muda a tela para
+#Abre o diretório que está os cardapios, aguarda carregamento por 2 segundos, muda a tela para
 #o cardapio usando alt + tab (por isso da conferencia de estar tudo fechado), aguarda 1 segundo por garantia,
 #seleciona tudo e copia usando PYAUTOGUI
 os.startfile(os.path.realpath(".\cardapio"))
