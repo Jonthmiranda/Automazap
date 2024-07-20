@@ -13,7 +13,7 @@ import pyautogui
 check = input("\n\nWhile this program is running, do not touch the computer!!\nPress enter to contine!\n\n")
 msg_client = input("Enter the message the customer will receive: \n\n")
 
-#Open the directory that contains the menus using webbrowser, wait for loading for 2 seconds, change the screen to
+#Open the directory that contains the menus, wait for loading for 2 seconds, change the screen to
 #the menu using alt + tab (that's why everything is closed), wait 1 second to be sure,
 #select all and copy using PYAUTOGUI
 webbrowser.open(os.path.realpath(".\cardapio")) #cardapio == menu
