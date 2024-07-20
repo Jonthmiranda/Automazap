@@ -1,6 +1,7 @@
 #Bibliotecas
 import pandas as pd
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
@@ -16,7 +17,7 @@ msg_cliente = input("Digite a mensagem que o cliente irá receber: \n\n")
 #Abre o diretório que está os cardapios usando webbrowser, aguarda carregamento por 2 segundos, muda a tela para
 #o cardapio usando alt + tab (por isso da conferencia de estar tudo fechado), aguarda 1 segundo por garantia,
 #seleciona tudo e copia usando PYAUTOGUI
-webbrowser.open(os.path.realpath(".\cardapio"))
+os.startfile(os.path.realpath(".\cardapio"))
 time.sleep(2)
 pyautogui.hotkey('alt', 'tab') #Se estiver rodando em IDE, é necessário habilitar a linha 21 e 22, se não buga
 time.sleep(1)
@@ -24,7 +25,7 @@ pyautogui.hotkey('ctrl', 'a')
 pyautogui.hotkey('ctrl', 'c')
 
 #Carregando banco de dados onde contém os contatos usando Panda
-contatos_df = pd.read_excel("Contatos.xlsx")
+contatos_df = pd.read_excel(".\Contatos.xlsx")
 
 #Usando Selenium, abre o navegador no Whastapp Web
 navegador = webdriver.Chrome()
@@ -34,10 +35,11 @@ navegador.get("https://web.whatsapp.com/")
 while len(navegador.find_elements(By.ID, "side")) < 1:
     time.sleep(1)
 
-try:
-    #Envio de mensagem usando o link, percorre o banco de dados, organiza os dados para poder usar em link
-    #abre o link e segue
-    for i, mensagem in enumerate(contatos_df['Número']):
+#faz a tentativa com Try, se conseguir perfeito, se não vai para excessão e pula o número
+#Envio de mensagem usando o link, percorre o banco de dados, organiza os dados para poder usar em link
+#abre o link e segue
+for i, mensagem in enumerate(contatos_df['Número']):
+    try:
         numero = contatos_df.loc[i, "Número"]
         link = f"https://web.whatsapp.com/send?phone={numero}&text={msg_cliente}"
         navegador.get(link)
@@ -62,8 +64,6 @@ try:
         pyautogui.hotkey('enter')
         time.sleep(10)
 
-except NoSuchElementException:
-    print("O número ", Número, " não funcionou")
-
-#nw_xpath = '//*[@id="app"]/div/span[2]/div/span/div/div/div/div/div/div[2]'
- #   while len(navegador.find_element(By.XPATH, f'{nw_xpath}')
+    #exceção caso o número de telefone estiver errado ou não localizar, então enviar mensagem dizendo qual número é
+    except NoSuchElementException:
+        print("\nO número ", numero, " não funcionou!\n")

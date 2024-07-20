@@ -34,29 +34,35 @@ browser.get("https://web.whatsapp.com/")
 while len(browser.find_elements(By.ID, "side")) < 1:
     time.sleep(1)
 
+#try with Try, if you get it perfect, if not, go to excess and skip the number
 #Sending a message using the link, scrolls through the database, organizes the data to be able to use it in a link
 #open the link and follow
 for i, message in enumerate(contacts_df['Número']): #número == number
-    number = contacts_df.loc[i, "Número"]
-    link = f"https://web.whatsapp.com/send?phone={number}&text={msg_client}"
-    browser.get(link)
+    try:
+        number = contacts_df.loc[i, "Número"]
+        link = f"https://web.whatsapp.com/send?phone={number}&text={msg_client}"
+        browser.get(link)
     
-    #Waits for the page to load, locating the "side" element in the HTML, once located it waits
-    #complete loading of the page for 5 seconds
-    while len(browser.find_elements(By.ID, "side")) < 1:
-        time.sleep(1) 
-    time.sleep(5)   
+        #Waits for the page to load, locating the "side" element in the HTML, once located it waits
+        #complete loading of the page for 5 seconds
+        while len(browser.find_elements(By.ID, "side")) < 1:
+            time.sleep(1) 
+        time.sleep(5)   
 
-    #Variable "elem_xpath" contains the XPATH of the element that needs to be located,
-    #locate the "text box" element in the HTML using XPATH, and press enter, wait 2 seconds
-    #to continue
-    elem_xpath = '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div/p/span'
-    browser.find_element(By.XPATH, f'{elem_xpath}').send_keys(Keys.ENTER)
-    time.sleep(2)
+        #Variable "elem_xpath" contains the XPATH of the element that needs to be located,
+        #locate the "text box" element in the HTML using XPATH, and press enter, wait 2 seconds
+        #to continue
+        elem_xpath = '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div/p/span'
+        browser.find_element(By.XPATH, f'{elem_xpath}').send_keys(Keys.ENTER)
+        time.sleep(2)
 
-    #sending menus that are in the clipboard, waiting 10 seconds to load photos
-    #press enter and wait 10 seconds until sending
-    pyautogui.hotkey('ctrl', 'v')
-    time.sleep(10)
-    pyautogui.hotkey('enter')
-    time.sleep(10)
+        #sending menus that are in the clipboard, waiting 10 seconds to load photos
+        #press enter and wait 10 seconds until sending
+        pyautogui.hotkey('ctrl', 'v')
+        time.sleep(10)
+        pyautogui.hotkey('enter')
+        time.sleep(10)
+
+    #exception if the phone number is wrong or not located, then send a message saying which number it is
+    except NoSuchElementException:
+        print("\nThe number ", numero, " did not work!\n")
