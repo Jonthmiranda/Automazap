@@ -16,7 +16,7 @@ msg_client = input("Enter the message the customer will receive: \n\n")
 #Open the directory that contains the menus, wait for loading for 2 seconds, change the screen to
 #the menu using alt + tab (that's why everything is closed), wait 1 second to be sure,
 #select all and copy using PYAUTOGUI
-webbrowser.open(os.path.realpath(".\cardapio")) #cardapio == menu
+webbrowser.open(os.path.realpath(r".\cardapio")) #cardapio == menu
 time.sleep(2)
 pyautogui.hotkey('alt', 'tab') #If running in IDE, it is necessary to enable line 21 and 22, otherwise it will be bug
 time.sleep(1)
@@ -24,7 +24,7 @@ pyautogui.hotkey('ctrl', 'a')
 pyautogui.hotkey('ctrl', 'c')
 
 #Loading database containing contacts using Panda
-contacts_df = pd.read_excel("Contatos.xlsx") #contatos == contacts
+contacts_df = pd.read_excel(r"Contatos.xlsx") #contatos == contacts
 
 #Using Selenium, open the navegator in Whastapp Web
 browser = webdriver.Chrome()
@@ -57,11 +57,11 @@ for i, message in enumerate(contacts_df['Número']): #número == number
         time.sleep(2)
 
         #sending menus that are in the clipboard, waiting 10 seconds to load photos
-        #press enter and wait 10 seconds until sending
+        #press enter and wait 5 seconds until sending
         pyautogui.hotkey('ctrl', 'v')
-        time.sleep(10)
+        time.sleep(5)
         pyautogui.hotkey('enter')
-        time.sleep(10)
+        time.sleep(5)
 
     #exception if the phone number is wrong or not located, then send a message saying which number it is
     except NoSuchElementException:
