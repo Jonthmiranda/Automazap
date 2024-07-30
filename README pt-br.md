@@ -1,6 +1,6 @@
 Português | [English](https://github.com/Jonthmiranda/Automazap/blob/main/README.md)
 
-# Automazap 1.2
+# Automazap 1.3
 
 ## Descrição
 
@@ -46,3 +46,9 @@ Inicie Main.py usando uma IDE Python ou CMD;
 Você pode escolher a linguagem entre Português e Inglês
 
 Depois de você escolher a linguagem e escrever a mensagem, você não precisa mexer no computador, lembre-se, linha 21 e 22 do Automazappt-br.py, precisa estar habilitado para rodar corretamente em uma IDE ou CMD, ao criar .exe essas linhas precisam estar desativadas e não deverá ter nada aberto além da IDE
+
+## Melhorias
+
+1.1 -> added English version and Main.py;
+1.2 -> Fixed error when WhatsApp web has an error in the phone number;
+1.3 -> Improved timing and menu directory correction
