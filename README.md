@@ -1,6 +1,6 @@
 [Português](https://github.com/Jonthmiranda/Automazap/blob/main/README%20pt-br.md) | English
 
-# Automazap 1.2
+# Automazap 1.3
 
  ## Description
 
