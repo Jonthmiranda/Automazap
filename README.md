@@ -46,3 +46,11 @@
  You can choose the language between Portuguese and English
 
  After you choose the language and write the message, you don't need to use the computer, remember, line 21 and 22 of Automazappt-br.py, it needs to be enabled to run correctly in an IDE or CMD, when creating .exe these lines must be disabled and there must be nothing open other than the IDE
+
+## version
+
+1.1 -> added English version;
+
+1.2 -> Fixed error when WhatsApp web has an error in the phone number;
+
+1.3 -> Improved timing and menu directory correction
