@@ -17,7 +17,7 @@ msg_cliente = input("Digite a mensagem que o cliente irá receber: \n\n")
 #Abre o diretório que está os cardapios, aguarda carregamento por 2 segundos, muda a tela para
 #o cardapio usando alt + tab (por isso da conferencia de estar tudo fechado), aguarda 1 segundo por garantia,
 #seleciona tudo e copia usando PYAUTOGUI
-os.startfile(os.path.realpath(".\cardapio"))
+os.startfile(os.path.realpath(r".\cardapio"))
 time.sleep(2)
 pyautogui.hotkey('alt', 'tab') #Se estiver rodando em IDE, é necessário habilitar a linha 21 e 22, se não buga
 time.sleep(1)
@@ -25,7 +25,7 @@ pyautogui.hotkey('ctrl', 'a')
 pyautogui.hotkey('ctrl', 'c')
 
 #Carregando banco de dados onde contém os contatos usando Panda
-contatos_df = pd.read_excel(".\Contatos.xlsx")
+contatos_df = pd.read_excel(r".\Contatos.xlsx")
 
 #Usando Selenium, abre o navegador no Whastapp Web
 navegador = webdriver.Chrome()
@@ -58,11 +58,11 @@ for i, mensagem in enumerate(contatos_df['Número']):
         time.sleep(2)
 
         #enviando cardápios que estão na area de tranferencia, aguardando 10 segundos para carregar fotos
-        #aperta enter e aguarda 10 segundos até enviar
+        #aperta enter e aguarda 5 segundos até enviar
         pyautogui.hotkey('ctrl', 'v')
-        time.sleep(10)
+        time.sleep(5)
         pyautogui.hotkey('enter')
-        time.sleep(10)
+        time.sleep(5)
 
     #exceção caso o número de telefone estiver errado ou não localizar, então enviar mensagem dizendo qual número é
     except NoSuchElementException:
