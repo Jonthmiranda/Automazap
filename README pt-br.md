@@ -49,6 +49,8 @@ Depois de você escolher a linguagem e escrever a mensagem, você não precisa m
 
 ## Melhorias
 
-1.1 -> added English version and Main.py;
-1.2 -> Fixed error when WhatsApp web has an error in the phone number;
-1.3 -> Improved timing and menu directory correction
+1.1 -> adicionada versão em inglês;
+
+1.2 -> Corrigido erro quando o WhatsApp web apresenta erro no número do telefone;
+
+1.3 -> Tempo melhorado e correção de diretório de menu
