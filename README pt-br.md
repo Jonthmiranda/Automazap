@@ -1,10 +1,10 @@
 Português | [English](https://github.com/Jonthmiranda/Automazap/blob/main/README.md)
 
-# Automazap 1.3
+# Automazap 1.4
 
 ## Descrição
 
-Sistema de automação em Python para envio de cardápios e descrição para contatos no Whatsapp Web.
+Sistema de automação em Python para envio de cardápios e descrição para contatos no Whatsapp Web, e raspagem de dados para salvamento de contatos em .xlsx
 
 bibliotecas: Selenium, Pyautogui, Pandas e urllib.
 
@@ -15,12 +15,14 @@ bibliotecas: Selenium, Pyautogui, Pandas e urllib.
 
 - Mensagem Personalizada: Permite o envio de uma mensagem personalizada junto com os cardápios para todos os números listados no arquivo `Contatos.xlsx`.
 
+- Raspagem de dados do whastapp para salvamento de contatos em .xlsx
+
 
 ## Benefícios
 
 - Economia de Tempo: Automatiza o processo de envio de cardápios, permitindo que os funcionários se concentrem em outras tarefas.
 - Facilidade de Uso: Basta organizar os arquivos de cardápios no diretório e o sistema cuida do resto.
-
+- Sem perda de tempo salvando contatos em uma planilha excell.
 
 ## Requisitos
 
@@ -43,7 +45,7 @@ git clone https://github.com/Jonthmiranda/Automazap
 
 Inicie Main.py usando uma IDE Python ou CMD;
 
-Você pode escolher a linguagem entre Português e Inglês
+Você pode escolher a linguagem entre Português e Inglês e se quer salvar contatos ou mandar os cardapios diretamente
 
 Depois de você escolher a linguagem e escrever a mensagem, você não precisa mexer no computador, lembre-se, linha 21 e 22 do Automazappt-br.py, precisa estar habilitado para rodar corretamente em uma IDE ou CMD, ao criar .exe essas linhas precisam estar desativadas e não deverá ter nada aberto além da IDE
 
@@ -54,3 +56,5 @@ Depois de você escolher a linguagem e escrever a mensagem, você não precisa m
 1.2 -> Corrigido erro quando o WhatsApp web apresenta erro no número do telefone;
 
 1.3 -> Tempo melhorado e correção de diretório de menu
+
+1.4 -> Correções de bugs e adicionado raspagem de dados para salvar contatos
