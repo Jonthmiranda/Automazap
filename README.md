@@ -18,7 +18,6 @@
 
  - Time Saving: Automates the menu sending process, allowing employees to focus on other tasks.
  - Ease of Use: Simply organize the menu files in the directory and the system takes care of the rest.
- - Without wasting time to save yours contactos in a excell spreadsheet.
 
  ## Requirements
 
