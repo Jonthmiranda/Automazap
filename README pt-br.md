@@ -4,7 +4,7 @@ Português | [English](https://github.com/Jonthmiranda/Automazap/blob/main/READM
 
 ## Descrição
 
-Sistema de automação em Python para envio de cardápios e descrição para contatos no Whatsapp Web, e raspagem de dados para salvamento de contatos em .xlsx
+Sistema de automação em Python para envio de cardápios e descrição para contatos no Whatsapp Web.
 
 bibliotecas: Selenium, Pyautogui, Pandas e urllib.
 
@@ -15,14 +15,10 @@ bibliotecas: Selenium, Pyautogui, Pandas e urllib.
 
 - Mensagem Personalizada: Permite o envio de uma mensagem personalizada junto com os cardápios para todos os números listados no arquivo `Contatos.xlsx`.
 
-- Raspagem de dados do whastapp para salvamento de contatos em .xlsx
-
-
 ## Benefícios
 
 - Economia de Tempo: Automatiza o processo de envio de cardápios, permitindo que os funcionários se concentrem em outras tarefas.
 - Facilidade de Uso: Basta organizar os arquivos de cardápios no diretório e o sistema cuida do resto.
-- Sem perda de tempo salvando contatos em uma planilha excell.
 
 ## Requisitos
 
@@ -57,4 +53,4 @@ Depois de você escolher a linguagem e escrever a mensagem, você não precisa m
 
 1.3 -> Tempo melhorado e correção de diretório de menu
 
-1.4 -> Correções de bugs e adicionado raspagem de dados para salvar contatos
+1.4 -> Correções de bugs.
