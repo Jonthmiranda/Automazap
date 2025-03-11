@@ -4,7 +4,7 @@
 
  ## Description
 
- Automation system in Python for sending menus and descriptions to contacts on Whatsapp Web and data scraping to save contacts in .xlsx.
+ Automation system in Python for sending menus and descriptions to contacts on Whatsapp Web.
 
  libraries: Selenium, Pyautogui, Pandas and urllib.
 
@@ -13,9 +13,6 @@
  - Automatic Menu Sending: The system reads menu files (PDF, JPG, PNG, etc.) from a specific directory and automatically sends them to customers.
 
  - Personalized Message: Allows sending a personalized message along with the menus to all numbers listed in the `Contacts.xlsx` file.
-
- - Data scraping to save contacts in .xlsx.
-
 
  ## Benefits
 
@@ -56,4 +53,4 @@
 
 1.3 -> Improved timing and menu directory correction
 
-1.4 -> Bugs fixes and add data scraping to save contacts
+1.4 -> Bugs fixes
