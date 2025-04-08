@@ -26,4 +26,6 @@
 
 1.3 -> Improved timing and menu directory correction
 
+Note: Project published with permission from the company for whom it was developed.
+
 1.4 -> Bugs fixes
