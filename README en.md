@@ -1,12 +1,10 @@
-[Português](https://github.com/Jonthmiranda/Automazap/blob/main/README%20pt-br.md) | English
+[Português](https://github.com/Jonthmiranda/Automazap/blob/main/README.md) | English
 
 # Automazap 1.4
 
  ## Description
 
  Automation system in Python for sending menus and descriptions to contacts on Whatsapp Web.
-
- libraries: Selenium, Pyautogui, Pandas and urllib.
 
  ## Main Features
 
@@ -18,31 +16,7 @@
 
  - Time Saving: Automates the menu sending process, allowing employees to focus on other tasks.
  - Ease of Use: Simply organize the menu files in the directory and the system takes care of the rest.
-
- ## Requirements
-
- - Python installed
- - Selenium, Pandas, PyautoGUI Libraries
- - Internet access
- - Google Chrome
- - WhatsApp on your smartphone to access WhatsApp Web
-
- ## Installation
-
- ```bash
- git clone https://github.com/Jonthmiranda/Automazap
- ```
-
- ## Usage
- 1st The menus that will be sent to customers must be in the "menu" folder, numbered in the order in which they will be sent e.g.: 1 -> first, 2 -> second, etc...
-
- 2nd The contact details to whom it will be sent are in Contacts.xlsx
-
- Launch Main.py using a Python IDE or CMD;
-
- You can choose the language between Portuguese and English and if you want to save contacts or send menus directly
-
- After you choose the language and write the message, you don't need to use the computer, remember, line 21 and 22 of Automazappt-br.py, it needs to be enabled to run correctly in an IDE or CMD, when creating .exe these lines must be disabled and there must be nothing open other than the IDE
+ - Money Saving: Does not use the Whatsapp API
 
 ## version
 
