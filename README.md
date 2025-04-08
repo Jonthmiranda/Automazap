@@ -1,12 +1,10 @@
-Português | [English](https://github.com/Jonthmiranda/Automazap/blob/main/README.md)
+Português | [English](https://github.com/Jonthmiranda/Automazap/blob/main/README en.md)
 
 # Automazap 1.4
 
 ## Descrição
 
 Sistema de automação em Python para envio de cardápios e descrição para contatos no Whatsapp Web.
-
-bibliotecas: Selenium, Pyautogui, Pandas e urllib.
 
 ## Funcionalidades Principais
 
@@ -19,31 +17,6 @@ bibliotecas: Selenium, Pyautogui, Pandas e urllib.
 - Economia de Tempo: Automatiza o processo de envio de cardápios, permitindo que os funcionários se concentrem em outras tarefas.
 - Facilidade de Uso: Basta organizar os arquivos de cardápios no diretório e o sistema cuida do resto.
 - Economia de Dinheiro: Não usa API do whatsapp.
-
-## Requisitos
-
-- Python instalado
-- Bibliotecas Selenium , Pandas, PyautoGUI
-- Acesso à internet
-- Google Chrome
-- WhatsApp no smartphone para acesso ao WhatsApp Web
-
-## Instalação
-
-```bash
-git clone https://github.com/Jonthmiranda/Automazap
-```
-
-## Uso
-1º Os cardapios que serão enviados para os clientes deveram estar na pasta "cardapio", numerada para ordem que será enviado ex: 1 -> primeiro, 2 -> segundo etc...
-
-2º Os contatos de para quem será enviado está no Contatos.xlsx
-
-Inicie Main.py usando uma IDE Python ou CMD;
-
-Você pode escolher a linguagem entre Português e Inglês e se quer salvar contatos ou mandar os cardapios diretamente
-
-Depois de você escolher a linguagem e escrever a mensagem, você não precisa mexer no computador, lembre-se, linha 21 e 22 do Automazappt-br.py, precisa estar habilitado para rodar corretamente em uma IDE ou CMD, ao criar .exe essas linhas precisam estar desativadas e não deverá ter nada aberto além da IDE
 
 ## Melhorias
 
