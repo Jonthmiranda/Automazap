@@ -49,7 +49,6 @@ O sistema já está pronto para uso
 
 ## Contato
 
-- Nome: Jonathan Miranda
 - Email: miranda.jonathan@outlook.com
 - Linkedin: https://www.linkedin.com/in/mirandajonathan/
 
