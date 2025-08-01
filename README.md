@@ -12,13 +12,19 @@ Antes de começar, verifique se você tem instalado:
 - Pandas
   '''bash
   pip install pandas
+  '''
 - Selenium
   '''bash
   pip install selenium
+  '''
 - pyautogui
   '''bash
   pip install pyautogui
+  '''
 - Python 3+
+  '''bash
+  https://www.python.org/downloads
+  '''
 
 ## 🛠️ Instalação
 Siga estas etapas para configurar o projeto localmente:
