@@ -17,7 +17,7 @@ Antes de começar, verifique se você tem instalado:
   ```bash
   pip install selenium
   ```
-- pyautogui
+- Pyautogui
   ```bash
   pip install pyautogui
   ```
@@ -32,17 +32,7 @@ Siga estas etapas para configurar o projeto localmente:
 ```bash
 # Clone o repositório
 git clone https://github.com/seu-usuario/repositorio.git
+```
 
-# Acesse a pasta do projeto
-cd repositorio
-
-# Instale as dependências
-npm install
-
-# Configure as variáveis de ambiente
-cp .env.example .env
-
-# Execute o projeto
-npm start
 
 
