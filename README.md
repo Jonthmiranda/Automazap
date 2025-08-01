@@ -10,21 +10,21 @@ Sistema de automação em Python para envio de cardápios e mensagens para conta
 ## Pré-requisitos
 Antes de começar, verifique se você tem instalado:
 - Pandas
-  '''bash
+  ```bash
   pip install pandas
-  '''
+  ```
 - Selenium
-  '''bash
+  ```bash
   pip install selenium
-  '''
+  ```
 - pyautogui
-  '''bash
+  ```bash
   pip install pyautogui
-  '''
+  ```
 - Python 3+
-  '''bash
+  ```bash
   https://www.python.org/downloads
-  '''
+  ```
 
 ## 🛠️ Instalação
 Siga estas etapas para configurar o projeto localmente:
