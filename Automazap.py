@@ -11,7 +11,7 @@ import pyautogui
 
 #Pede para fechar todas as janelas e manter somente o programa ativo,
 #apos tudo fechado aperta enter, e digite a mensagem que o cliente irá receber em seu Whatsapp
-conferindo = input("\n\nEnquanto esse programa estiver rodando, não mexa no computador!!\nAperte enter para continuar!\n\n")
+conferindo = input("\n\nEnquanto estiver rodando, não mexa no computador!!\nAperte enter para continuar!\n\n")
 msg_cliente = input("Digite a mensagem que o cliente irá receber: \n\n")
 
 #Abre o diretório que está os cardapios, aguarda carregamento por 2 segundos, muda a tela para
