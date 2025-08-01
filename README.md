@@ -1,7 +1,7 @@
 # Automazap 1.4
 
-Projeto publicado com permissão da empresa para quem foi desenvolvida.
-Sistema de automação em Python para envio de cardápios e mensagens para contatos pelo Whatsapp Web.
+- Projeto publicado com permissão da empresa para quem foi desenvolvida.
+- Sistema de automação em Python para envio de cardápios e mensagens para contatos pelo Whatsapp Web.
 
 ## Recursos Principais
 - Envio automático de imagens para o Whastapp
