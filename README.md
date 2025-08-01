@@ -26,13 +26,14 @@ Antes de começar, verifique se você tem instalado:
   https://www.python.org/downloads
   ```
 
-## 🛠️ Instalação
-Siga estas etapas para configurar o projeto localmente:
+## Instalação
+Siga estas etapas para usar o projeto:
 
 ```bash
-# Clone o repositório
 git clone https://github.com/seu-usuario/repositorio.git
 ```
+O sistema já está pronto para uso
+
 
 
 
