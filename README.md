@@ -1,31 +1,42 @@
-Português | [English](https://github.com/Jonthmiranda/Automazap/blob/main/README%20en.md)
-
 # Automazap 1.4
 
-## Descrição
+Projeto publicado com permissão da empresa para quem foi desenvolvida.
+Sistema de automação em Python para envio de cardápios e mensagens para contatos pelo Whatsapp Web.
 
-Sistema de automação em Python para envio de cardápios e descrição para contatos no Whatsapp Web.
+## Recursos Principais
+- Envio automático de imagens para o Whastapp
+- Envio automático de mensagens para o Whastapp
 
-## Funcionalidades Principais
+## Pré-requisitos
+Antes de começar, verifique se você tem instalado:
+- Pandas
+  '''bash
+  pip install pandas
+- Selenium
+  '''bash
+  pip install selenium
+- pyautogui
+  '''bash
+  pip install pyautogui
+- Python 3+
 
-- Envio Automático de Cardápios: O sistema lê os arquivos de cardápios (PDF, JPG, PNG, etc.) de um diretório específico e os envia automaticamente para os clientes.
+## 🛠️ Instalação
+Siga estas etapas para configurar o projeto localmente:
 
-- Mensagem Personalizada: Permite o envio de uma mensagem personalizada junto com os cardápios para todos os números listados no arquivo `Contatos.xlsx`.
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/repositorio.git
 
-## Benefícios
+# Acesse a pasta do projeto
+cd repositorio
 
-- Economia de Tempo: Automatiza o processo de envio de cardápios, permitindo que os funcionários se concentrem em outras tarefas.
-- Facilidade de Uso: Basta organizar os arquivos de cardápios no diretório e o sistema cuida do resto.
-- Economia de Dinheiro: Não usa API do whatsapp.
+# Instale as dependências
+npm install
 
-## Melhorias
+# Configure as variáveis de ambiente
+cp .env.example .env
 
-1.1 -> adicionada versão em inglês;
+# Execute o projeto
+npm start
 
-1.2 -> Corrigido erro quando o WhatsApp web apresenta erro no número do telefone;
 
-1.3 -> Tempo melhorado e correção de diretório de menu
-
-1.4 -> Correções de bugs.
-
-Obs: Projeto publicado com permissão da empresa para quem foi desenvolvida
