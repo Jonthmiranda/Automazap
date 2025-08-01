@@ -35,7 +35,7 @@ Antes de começar, verifique se você tem instalado:
 Siga estas etapas para usar o projeto:
 
 ```bash
-git clone https://github.com/seu-usuario/repositorio.git
+git clone https://github.com/Jonthmiranda/Automazap
 ```
 O sistema já está pronto para uso
 
